@@ -781,20 +781,7 @@ body:before {
          
 
 
-/* For mobile devices, remove background-attachment: fixed */
-@media only screen and (max-width: 1024px) {
-  #hero-998 .cs-background {
-    background-attachment: scroll; /* Fallback for mobile */
-    background-size: cover;
-    position: absolute;
-    width: 110%;
-    height: 110%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(0);
-    transition: transform 0.2s ease-out;
-  }
-}
+
 
 
 
