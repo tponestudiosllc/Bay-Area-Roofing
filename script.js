@@ -52,8 +52,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             const offset = 80; // Adjust this value for the padding above the section
-            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+            // Use a polyfill for Safari compatibility
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
         }
     });
 });
