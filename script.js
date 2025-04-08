@@ -31,4 +31,29 @@ for (const item of dropDowns) {
 	};
 	item.addEventListener('click', onClick);
 }
-                                
+
+// Close mobile menu when a navbar link is clicked
+document.querySelectorAll('#cs-navigation .cs-li-link').forEach(link => {
+    link.addEventListener('click', function () {
+        if (CSnavbarMenu.classList.contains('cs-active')) {
+            CShamburgerMenu.classList.remove('cs-active');
+            CSnavbarMenu.classList.remove('cs-active');
+            CSbody.classList.remove('cs-open');
+            // Update aria-expanded to false
+            document.querySelector('#cs-expanded').setAttribute('aria-expanded', 'false');
+        }
+    });
+});
+
+// Smooth scrolling for anchor links with padding above each section
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offset = 80; // Adjust this value for the padding above the section
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+        }
+    });
+});

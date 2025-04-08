@@ -316,6 +316,9 @@ body {
   #cs-navigation .cs-contact-info {
       display: none; /* Hide contact info on mobile screens */
   }
+  #cs-navigation .cs-contact-info-mobile p {
+    color: white; /* Set phone number font color to white */
+  }
 }
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
