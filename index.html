@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Area Roofing</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/roofing.png" type="image/x-icon">
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="./images/logo-1.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="#hero-998" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#sbs-1099" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#services-264" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#why-choose-441" class="cs-li-link">
+                            Why Us?
+                        </a>
+                    </li>
+                </ul>
+                <!-- Contact Information for Mobile -->
+                <div class="cs-contact-info-mobile">
+                    <p>
+                        <img src="./images/phone-icon.svg" alt="Phone Icon" width="16" height="16" aria-hidden="true">
+                        (410) 544-1295
+                    </p>
+                    <p>
+                        <img src="./images/location-icon.svg" alt="Location Icon" width="16" height="16" aria-hidden="true">
+                        340 Sherman Ave Arnold, MD 21012
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <!-- Contact Information -->
+        <div class="cs-contact-info">
+            <p>
+                <img src="./images/phone-icon.svg" alt="Phone Icon" width="16" height="16" aria-hidden="true">
+                (410) 544-1295
+            </p>
+            <p>
+                <img src="./images/location-icon.svg" alt="Location Icon" width="16" height="16" aria-hidden="true">
+                340 Sherman Ave Arnold, MD 21012
+            </p>
+        </div>
+    </div>
+</header>
+                                
+
+
+
+
+    
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-998">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Get to Know</span>
+            <!--Logo-->
+            <picture class="cs-logo">
+                <source media="(max-width: 600px)" srcset="./images/logo-2.png">
+                <source media="(min-width: 601px)" srcset="./images/logo-2.png">
+                <img decoding="async" src="./images/logo-2.png" alt="Stitch House Restaurant" width="614" height="166">
+                </picture>
+                <p class="cs-text">
+                    Protecting Bay Area homes with expert roofing solutions built to last. Trust our local team to deliver reliable, high-quality service every time.
+                </p>
+                <a href="#services-264" class="cs-button-solid">See How We Can Help</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <!--Image is also set as background image in CSS at 1400px for parallax effect-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="./images/house-1.jpg">
+        <source media="(min-width: 601px)" srcset="./images/house-1.jpg">
+        <img decoding="async" src="./images/house-1.jpg" alt="logo" width="1920" height="1000">
+        </picture>
+</section>
+
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-264">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Services</span>
+            <h2 class="cs-title">What We Do</h2>
+            <p class="cs-text">
+                Bay Area Roofing provides professional roofing services for residential and commercial properties, specializing in repairs, replacements, and new installations built to withstand the elements.
+            </p>
+            <a href="#why-choose-441" class="cs-button-solid">Why Choose Us?</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <h3 class="cs-h3">Roof Installation</h3>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="./images/roof-1.jpg">
+                    <source media="(min-width: 601px)" srcset="./images/roof-1.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="./images/roof-1.jpg" alt="house" width="275" height="132">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Roof Repair</h3>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="./images/roof-2.jpg">
+                    <source media="(min-width: 601px)" srcset="./images/roof-2.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="./images/roof-2.jpg" alt="stairs" width="275" height="132">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Roof Inspections & Maintenance</h3>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="./images/roof-3.jpg">
+                    <source media="(min-width: 601px)" srcset="./images/roof-3.jpg">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="./images/roof-3.jpg" alt="bathroom" width="275" height="132">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+                                
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1099">
+    <div class="cs-container">
+        <!-- Move content above the image group -->
+        <div class="cs-content">
+            <span class="cs-topper">Mission & Vision</span>
+            <h2 class="cs-title">More About Us</h2>
+            <p class="cs-text">
+                Our experienced team provides expert roofing services including inspections, repairs, replacements, and full installations for both residential and commercial properties. Whether it’s protecting a home from harsh weather or enhancing curb appeal, we deliver durable, high-quality roofing solutions with precision and care.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <h3 class="cs-h3">Hours of Operation</h3>
+                    <p class="cs-li-text">
+                        Monday-Friday : 6am to 6pm
+                    </p>
+                    <p class="cs-li-text">
+                        Saturday & Sunday: Closed
+                    </p>
+                    <p class="cs-li-text">
+                        (410) 544-1295
+                    </p>
+                    <p class="cs-li-text">
+                        340 Sherman Ave Arnold, MD 21012
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="./images/house-3.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="./images/house-3.jpg">
+                <img loading="lazy" decoding="async" src="./images/house-3.jpg" alt="appliance" width="323" height="447">
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="./images/house-roof.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="./images/house-roof.jpg">
+                <img loading="lazy" decoding="async" src="./images/house-roof.jpg" alt="appliance" width="305" height="441">
+            </picture>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ============================================ -->
+    <!--                 Why Choose                   -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-441">
+        <div class="cs-container">
+            <span class="cs-topper">Best-In-Class</span>
+            <h2 class="cs-title">Why Choose Us?</h2>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <img class="cs-icon" src="./images/roof-icon.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                        </picture>
+                        <span class="cs-number">500+</span>
+                        <p class="cs-item-p">
+                            Roofs Installed
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <img class="cs-icon" src="./images/calendar-icon.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                        </picture>
+                        <span class="cs-number">20+</span>
+                        <p class="cs-item-p">
+                            Years of Experience
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <img class="cs-icon" src="./images/smile-icon.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40">
+                        </picture>
+                        <span class="cs-number">98%</span>
+                        <p class="cs-item-p">
+                            Customer Satisfaction
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+
+
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1390">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="./images/logo-2.png" alt="logo" width="209" height="40">
+            </a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a class='cs-link' href='#hero-998'>Home</a>
+                </li>
+                <li class="cs-li">
+                    <a class='cs-link' href='#sbs-1099'>About</a>
+                </li>
+                <li class="cs-li">
+                    <a class='cs-link' href='#services-264'>Services</a>
+                </li>
+                <li class="cs-li">
+                    <a class='cs-link' href='#why-choose-441'>Why Us?</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <span class="cs-copyright" style="color: white; text-decoration: none;">
+                Roof icons created by fatihicon - Flaticon
+            </span>
+            <div class="cs-flex">
+                <a href="https://www.tponestudiosllc.com/" class="cs-copyright-link" target="_blank">Website created by</a>
+                <span class="cs-separater">|</span>
+                <a href="https://www.tponestudiosllc.com/" class="cs-copyright-link" target="_blank">T-Pone Studios LLC</a>
+            </div>
+        </div>
+    </div>
+</footer>
+                                
+                                
+
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
