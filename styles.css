@@ -782,12 +782,10 @@ body:before {
 
 
 /* For mobile devices, remove background-attachment: fixed */
-@media only screen and (max-width: 63.9375rem) {
+@media only screen and (max-width: 1024px) {
   #hero-998 .cs-background {
-    background-attachment: scroll; /* fall back to scroll */
-    /* Optionally, adjust the size so you have extra image area for the parallax movement */
+    background-attachment: scroll; /* Fallback for mobile */
     background-size: cover;
-    /* Remove the fixed positioning if necessary or leave it absolute */
     position: absolute;
     width: 110%;
     height: 110%;

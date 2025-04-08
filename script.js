@@ -68,14 +68,16 @@ document.querySelectorAll('#cs-navigation .cs-li-link').forEach(link => {
 
 });
 
-// Only run the parallax effect on mobile devices
-if (window.innerWidth <= 1024) {
-    window.addEventListener('scroll', function() {
-      var scrollPosition = window.pageYOffset;
+document.addEventListener("DOMContentLoaded", function() {
+    // Only activate parallax on mobile devices
+    if (window.innerWidth <= 1024) {
       var heroBg = document.querySelector('#hero-998 .cs-background');
       if (heroBg) {
-        // Adjust the multiplier to control the parallax intensity
-        heroBg.style.transform = 'translateX(-50%) translateY(' + (scrollPosition * 0.5) + 'px)';
+        window.addEventListener('scroll', function() {
+          var scrollPos = window.pageYOffset;
+          // Adjust multiplier (0.3) to control the speed of the parallax effect
+          heroBg.style.transform = 'translateX(-50%) translateY(' + (scrollPos * 0.3) + 'px)';
+        });
       }
-    });
-  }
+    }
+  });
