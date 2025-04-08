@@ -698,6 +698,7 @@ body:before {
   @media only screen and (max-width: 1023px) {
     #hero-998 .cs-background {
         background-attachment: scroll; /* Ensure the image displays correctly on mobile */
+        background-position: top center; /* Adjust position for better visibility */
     }
   }
   #hero-998 .cs-background:before {
