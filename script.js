@@ -65,4 +65,17 @@ document.querySelectorAll('#cs-navigation .cs-li-link').forEach(link => {
             document.querySelector('#cs-expanded').setAttribute('aria-expanded', 'false');
         }
     });
+
 });
+
+// Only run the parallax effect on mobile devices
+if (window.innerWidth <= 1024) {
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.pageYOffset;
+      var heroBg = document.querySelector('#hero-998 .cs-background');
+      if (heroBg) {
+        // Adjust the multiplier to control the parallax intensity
+        heroBg.style.transform = 'translateX(-50%) translateY(' + (scrollPosition * 0.5) + 'px)';
+      }
+    });
+  }
