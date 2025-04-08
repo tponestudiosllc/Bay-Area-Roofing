@@ -686,10 +686,10 @@ body:before {
         top: 0;
         left: 0;
         z-index: -1;
-        background: url("./images/house-1.jpg") no-repeat center center fixed;
+        background: url("./images/house-1.jpg") no-repeat center center;
         background-size: cover;
-        background-attachment: fixed; /* Ensure parallax effect */
-        background-position: center;
+        background-attachment: scroll; /* Fallback for Safari */
+        -webkit-background-attachment: scroll; /* Ensure compatibility with Safari */
     }
     #hero-998 .cs-background:before {
         /* background color overlay */
