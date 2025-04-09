@@ -319,6 +319,20 @@ body {
   #cs-navigation .cs-contact-info-mobile p {
     color: white; /* Set phone number font color to white */
   }
+  #cs-navigation .cs-contact-info-mobile p {
+    color: white; /* Set phone number font color to white */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Prevent browsers from styling phone numbers as links */
+  #cs-navigation .cs-contact-info-mobile p a {
+    color: inherit; /* Inherit the white color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  #cs-navigation .cs-contact-info-mobile p a:visited {
+    color: inherit; /* Ensure visited links remain white */
+  }
 }
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
