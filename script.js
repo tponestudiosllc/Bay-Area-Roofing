@@ -45,6 +45,19 @@ document.querySelectorAll('#cs-navigation .cs-li-link').forEach(link => {
     });
 });
 
+// Close the navbar when the screen is resized to a larger width
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 1024) { // Adjust this value to match your breakpoint
+        if (CSnavbarMenu.classList.contains('cs-active')) {
+            CShamburgerMenu.classList.remove('cs-active');
+            CSnavbarMenu.classList.remove('cs-active');
+            CSbody.classList.remove('cs-open');
+            // Update aria-expanded to false
+            document.querySelector('#cs-expanded').setAttribute('aria-expanded', 'false');
+        }
+    }
+});
+
 // Smooth scrolling for anchor links with padding above each section
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
