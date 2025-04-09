@@ -1175,6 +1175,22 @@ body {
 color: var(--primary);
 }
 
+/* Ensure phone number in "More About Us" section has white text */
+#sbs-1099 .cs-li-text {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Prevent browsers from styling phone numbers as links */
+#sbs-1099 .cs-li-text a {
+    color: inherit; /* Inherit the white color */
+    text-decoration: none; /* Remove underline */
+}
+
+#sbs-1099 .cs-li-text a:visited {
+    color: inherit; /* Ensure visited links remain white */
+}
+
 
 
 
